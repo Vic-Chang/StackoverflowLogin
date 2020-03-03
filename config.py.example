@@ -1,0 +1,6 @@
+Account_Setting = dict(
+    account='example@mail.com.tw',
+    password='example',
+)
+LINE_NOTIFY_URL = 'https://notify-api.line.me/api/notify'
+LINE_NOTIFY_TOKEN = 'Token'
