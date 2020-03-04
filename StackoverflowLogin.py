@@ -24,6 +24,7 @@ def login_stackoverflow():
         return False
     else:
         print('成功登入!')
+        return True
 
 
 # 進入第一篇推薦文
@@ -52,6 +53,5 @@ if __name__ == '__main__':
     except Exception as e:
         print('發生錯誤，發送 Line 通知...')
         exception_notify(str(e), traceback.format_exc())
-
     print('即將關閉程式...')
     time.sleep(5)
