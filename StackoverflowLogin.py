@@ -32,7 +32,7 @@ def into_first_recommend_article():
     url = 'https://stackoverflow.com'
     r = rs.get(url)
     soup = BeautifulSoup(r.text, "html.parser")
-    post_url = url + soup.select('#question-mini-list h3 > a')[0]['href']
+    post_url = url + soup.select('#question-mini-list > a')[0]['href']
     rs.get(post_url)
 
 
